@@ -1,0 +1,13 @@
+fun x -> x : 'a -> 'a
+
+int -> int 
+let f x = if false then 0 else x
+
+(’a -> ’b) -> (’c -> ’a) -> ’c -> ’b 
+let func f1 f2 arg = f1(f2(arg)) 
+
+’a -> ’b -> ’a 
+let func2 a b = a
+
+’a -> ’a -> ’a
+let func3 a b = if true then a else b
